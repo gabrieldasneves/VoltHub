@@ -2,11 +2,12 @@ import React from "react";
 import { StyleSheet } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { Home } from "./src/pages/Home";
+import { colors } from "./src/modules/utils/colors";
 
 export default function App() {
   return (
     <LinearGradient
-      colors={["#151924", "#151924", "#464952"]}
+      colors={[colors.BLACK, colors.BLACK, colors.BLACK, colors.GRAY]}
       style={styles.linearGradient}
     >
       <Home />
