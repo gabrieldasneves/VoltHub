@@ -4,30 +4,15 @@ import { Button } from "../../components/atoms/Button";
 import { colors } from "../../modules/utils/colors";
 import { LinearGradient } from "expo-linear-gradient";
 
-export function Home({ navigation }) {
+export function MapPage() {
   return (
     <LinearGradient
       colors={[colors.BLACK, colors.BLACK, colors.BLACK, colors.GRAY]}
       style={styles.linearGradient}
     >
       <View style={styles.container}>
-        <View style={styles.body}>
-          <View style={styles.header}>
-            <Text style={styles.title}>VoltHub</Text>
-            <Text style={styles.bodyText}>
-              Find the closest electric {"\n"} vehicle charging station
-            </Text>
-          </View>
-          <View style={styles.buttonContainer}>
-            <Button onPress={() => navigation.navigate("MapPage")} />
-          </View>
-        </View>
-        <View style={styles.imgContainer}>
-          <Image
-            style={styles.carImg}
-            source={require("../../../assets/homeCar.png")}
-          />
-        </View>
+        <View style={styles.body}></View>
+        <View style={styles.imgContainer}></View>
       </View>
     </LinearGradient>
   );
